@@ -13,19 +13,13 @@
 
 <body>
     <!-- 
-        ----------------------HEADER------------------------
+        *************************************HEADER*******************************
      -->
     <header class="flex align-center space-between sticky">
-        <div id="burger" class="hidden flex align-center justify-center">
-            <button id="burgerIcon" class="burger_icon flex">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+        
         <div class="logo"><a href="./index.html" title="Accueil"><img src="./imagesSIte/logo-blanc.png"
                     alt="logo M'S"></a></div>
-        <div id="headerBurger" class="hidden">
+        <div id="headerBurger">
             <nav>
                 <ul class="flex gap32 flex-column">
                     <li><a href="" title="Accueil">Accueil</a></li>
@@ -33,27 +27,36 @@
                     <li><a href="" title="Vêtements">Vêtements</a></li>
                     <li><a href="" title="Accessoires">Accessoires</a></li>
                     <li><a href="" title="@utdoor">@utdoor</a></li>
-                    <li><a href="#contact" title="Contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="flex gap16">
+                <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
+                <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
+            </div>
         </div>
-        <nav class="">
+        <nav class="mobile">
             <ul class="flex gap32">
                 <li><a href="" title="Accueil">Accueil</a></li>
                 <li><a href="./categorieBaskets.html" title="Chaussures">Chaussures</a></li>
                 <li><a href="" title="Vêtements">Vêtements</a></li>
                 <li><a href="" title="Accessoires">Accessoires</a></li>
                 <li><a href="" class="door" title="@utdoor">@utdoor</a></li>
-                <li><a href="#contact" title="Contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="flex gap16">
+        <div class="mobile flex gap16">
             <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
             <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
         </div>
+        <div id="burger" class="init flex align-center justify-center">
+            <button id="burgerIcon" class="burger_icon flex">
+                <span id="1"></span>
+                <span id="2"></span>
+                <span id="3"></span>
+            </button>
+        </div>
     </header>
     <!-- 
-        ----------------------HERO------------------------
+        *************************************HERO*******************************
      -->
     <div class="hero flex justify-center align-center">
         <!--  <div class="imgHero"><img src="./imagesSIte/banniere-running.jpg" alt="Un homme fait un footing en nature"></div>-->
@@ -64,11 +67,11 @@
         </div>
     </div>
     <!-- 
-        ----------------------MAIN------------------------
+        *************************************MAIN*******************************
      -->
     <main>
         <!-- 
-        ----------------------PRODUITS PAR CATEGORIES------------------------
+            *************************************PRODUIT PAR CATEGORIE*******************************
         -->
         <section class="produitsCat container flex gap16">
             <h2>Nos produits par catégories</h2>
@@ -108,7 +111,7 @@
             </div>
         </section>
         <!-- 
-        ----------------------GAMME @UTDOOR------------------------
+            *************************************GAMME @UTDOOR*******************************
         -->
         <section class="gammeOut">
             <div class="container">
@@ -117,7 +120,7 @@
                     <p>Une sélection parmis les vêtements techniques de notre fabrication ainsi que des meilleures
                         marques sur le marché</p>
                     <div class="btn-blanc"><a href="">Voir les articles de la gamme @utdoor</a></div>
-                </div>
+                </div>    
                 <article class="outArt flex gap16">
                     <div class="outImg"><img src="./imagesSIte/outdoor6.jpg" alt="tee-shirt de la gamme @utdoor de M'S">
                     </div>
@@ -137,13 +140,11 @@
                         </div>
                         <div class="btn-produit"><a href="">Voir le détail du produit</a></div>
                     </div>
-
                 </article>
-
             </div>
         </section>
         <!-- 
-        ----------------------OFFRE------------------------
+            *************************************OFFRE*******************************
         -->
         <section class=" sectionOffre container flex space-between">
             <div class="offreContent flex">
@@ -157,7 +158,7 @@
                     alt="un jogging M'S noir disponible en plusieurs tailles"></div>
         </section>
         <!-- 
-        ----------------------MARQUES------------------------
+            *************************************MARQUES*******************************
         -->
         <section class="marques">
             <div class="container">
@@ -171,12 +172,12 @@
             </div>
         </section>
         <!-- 
-        ----------------------FORMULAIRE------------------------
+            *************************************FORMULAIRE*******************************
         -->
-        <section id="contact" class="container flex align-center space-between">
+        <section class="container flex align-center space-between">
             <div class="formImg"><img src="./imagesSIte/illustration-boxe.jpg"
                     alt="Un homme fait de la boxe avec de l'équipement M'S"></div>
-            <form id="monform" class="flex gap32" action="" method="get" novalidate>
+            <form id="monform" class="flex gap32" action="#" method="get" novalidate>
                 <div class="formContent flex gap16">
                     <h2>Contactez-nous</h2>
                     <p>Pour des informations sur nos produits, pour toute demande de renseignement ou pour nous faire
@@ -184,20 +185,24 @@
                 </div>
                 <div class="formulaire flex gap16">
                     <div class="civilite flex gap16">
-                        <label for="nom" class="flex flex-column gap5">Votre nom
-                            <input type="text" name="nom" id="nom">
+                        <div>
+                            <label for="nom" class="flex flex-column gap5">Votre nom
+                                <input type="text" name="nom" id="nom">
+                            </label>
                             <p class="p-error hidden" id="error-nom"></p>
-                        </label>
-                        <label for="prenom" class="flex flex-column gap5">Votre prénom
-                            <input type="text" name="prenom" id="prenom">
+                        </div>
+                        <div>
+                            <label for="prenom" class="flex flex-column gap5">Votre prénom
+                                <input type="text" name="prenom" id="prenom">
+                            </label>
                             <p class="p-error hidden" id="error-prenom"></p>
-                        </label>
+                        </div>
                     </div>
                     <div>
                         <label for="mail" class="flex flex-column gap5">Votre adresse de messagerie
                             <input type="email" name="mail" id="mail">
-                            <p class="p-error hidden" id="error-mail"></p>
                         </label>
+                        <p class="p-error hidden" id="error-mail"></p>
                     </div>
                     <div>
                         <label for="objet" class="flex flex-column gap5">Objet
@@ -207,15 +212,15 @@
                                 <option value="renseignement">Demande de renseignement</option>
                                 <option value="tech">Problème technique sur le site</option>
                             </select>
-                            <p class="p-error hidden" id="error-objet"></p>
                         </label>
+                        <p class="p-error hidden" id="error-objet"></p>
                     </div>
                     <div>
                         <label id="messageLab" for="message" class="flex flex-column gap5">Votre message <span
                                 class="long"></span>
                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                            <p class="p-error hidden" id="error-message"></p>
                         </label>
+                        <p class="p-error hidden" id="error-message"></p>
                     </div>
                     <button type="submit" class="btn-bleu">Envoyer votre message</button>
                 </div>
@@ -223,7 +228,7 @@
         </section>
     </main>
     <!-- 
-    ----------------------FOOTER------------------------
+        *************************************FOOTER*******************************
     -->
     <footer class="flex flex-column justify-center align-center gap32">
         <div class="logo"><a href="./index.html" title="Accueil"><img src="./imagesSIte/logo-blanc.png"
@@ -246,8 +251,8 @@
             </div>
             <div>
                 <h3>Horaires d'ouverture de nos boutiques</h3>
-                <p>Du lundi au vendredi : 10h - 12h30 puis 13h30 - 19h</p>
-                <p>Le samedi : 9h - 18h30 non stop</p>
+                <p>Du lundi au vendredi de 10h à 12h30 puis de 13h30 à 19h</p>
+                <p>Le samedi de 9h à 18h30 non stop</p>
             </div>
             <div>
                 <h3>Retrouvez nous sur les réseaux sociaux</h3>
@@ -256,7 +261,7 @@
         </div>
     </footer>
     <!-- 
-    ----------------------SCRIPT------------------------
+        *************************************SCRIPT*******************************
     -->
     <script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
     <script src="./header.js" defer></script>

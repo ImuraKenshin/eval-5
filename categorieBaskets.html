@@ -10,49 +10,79 @@
 </head>
 <body>
     <!-- 
-        ----------------------HEADER------------------------
-     -->
-     <header class="flex align-center space-between sticky">
-        <div id="burger" class="hidden flex align-center justify-center">
-            <button id="burgerIcon" class="burger_icon flex">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+        *************************************HEADER*******************************
+    -->
+    <header class="flex align-center space-between sticky">
+        
         <div class="logo"><a href="./index.html" title="Accueil"><img src="./imagesSIte/logo-blanc.png"
                     alt="logo M'S"></a></div>
-        <div id="headerBurger" class="hidden">
+        <div id="headerBurger">
             <nav>
                 <ul class="flex gap32 flex-column">
-                    <li><a href="./index.html" title="Accueil">Accueil</a></li>
+                    <li><a href="" title="Accueil">Accueil</a></li>
                     <li><a href="./categorieBaskets.html" title="Chaussures">Chaussures</a></li>
                     <li><a href="" title="Vêtements">Vêtements</a></li>
                     <li><a href="" title="Accessoires">Accessoires</a></li>
                     <li><a href="" title="@utdoor">@utdoor</a></li>
-                    <li><a href="./index.html?#contact" title="Contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="flex gap16">
+                <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
+                <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
+            </div>
         </div>
-        <nav class="">
+        <nav class="mobile">
             <ul class="flex gap32">
-                <li><a href="./index.html" title="Accueil">Accueil</a></li>
+                <li><a href="" title="Accueil">Accueil</a></li>
                 <li><a href="./categorieBaskets.html" title="Chaussures">Chaussures</a></li>
                 <li><a href="" title="Vêtements">Vêtements</a></li>
                 <li><a href="" title="Accessoires">Accessoires</a></li>
                 <li><a href="" class="door" title="@utdoor">@utdoor</a></li>
-                <li><a href="./index.html?#contact" title="Contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="flex gap16">
+        <div class="mobile flex gap16">
             <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
             <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
         </div>
+        <div id="burger" class="init flex align-center justify-center">
+            <button id="burgerIcon" class="burger_icon flex">
+                <span id="1"></span>
+                <span id="2"></span>
+                <span id="3"></span>
+            </button>
+        </div>
     </header>
+    <!-- 
+        *************************************PAGINATION*******************************
+    -->
+        <div class="container flex align-center">
+            <div class="ancreChaussure"><a href="" title="Chaussures">Chaussures ></a></div>
+            <div class="ancreBaskets"><a href="./categorieBaskets.html" title="Baskets">Baskets ></a></div>
+        </div>
+    <!-- 
+        *************************************LISTE PRODUIT*******************************
+    -->
+    <section class="listeProduit container">
+        <h1>Les baskets M'S</h1>
+        <div id="articleContainer" class="flex gap32">
+            <!--  
+            <article class="flex gap32">
+                <div><img src="" alt=""></div>
+                <div>
+                    <div class="outNew flex align-center space-between">
+                        <h5></h5>
+                        <p class="newPrix"></p>
+                    </div>
+                    <p></p>
+                </div>
+            </article>
+            -->
+        </div>
+    </section>
 
 
     <!-- 
-    ----------------------FOOTER------------------------
+        *************************************FOOTER*******************************
     -->
     <footer class="flex flex-column justify-center align-center gap32">
         <div class="logo"><a href="./index.html" title="Accueil"><img src="./imagesSIte/logo-blanc.png"
@@ -69,14 +99,14 @@
                         <li><a href="" title="Vêtements">Vêtements</a></li>
                         <li><a href="" title="Accessoires">Accessoires</a></li>
                         <li><a href="" title="@utdoor">@utdoor</a></li>
-                        <li><a href="#contact" title="Contact">Contact</a></li>
+                        <li><a href="./index.html?#contact" title="Contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
             <div>
                 <h3>Horaires d'ouverture de nos boutiques</h3>
-                <p>Du lundi au vendredi : 10h - 12h30 puis 13h30 - 19h</p>
-                <p>Le samedi : 9h - 18h30 non stop</p>
+                <p>Du lundi au vendredi de 10h à 12h30 puis de 13h30 à 19h</p>
+                <p>Le samedi de 9h à 18h30 non stop</p>
             </div>
             <div>
                 <h3>Retrouvez nous sur les réseaux sociaux</h3>
@@ -85,7 +115,7 @@
         </div>
     </footer>
     <!-- 
-    ----------------------SCRIPT------------------------
+        *************************************SCRIPT*******************************
     -->
     <script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
     <script src="./header.js" defer></script>
