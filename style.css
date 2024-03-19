@@ -35,6 +35,7 @@
 .align-center{
     align-items: center;
 }
+
 .space-between{
     justify-content: space-between;
 }
@@ -52,6 +53,9 @@
 }
 .gap32{
     gap: 32px;
+}
+.gap64{
+    gap: 64px;
 }
 .hidden{
     display: none;
@@ -115,6 +119,9 @@ p{
 }
 .btn-blanc>a{
     color: var(--dark);
+}
+.btn-blanc a:hover{
+    color: var(--blue-hover);
 }
 
 
@@ -212,6 +219,34 @@ header a{
   background-color: rgb(255, 59, 48);
   transform: translateY(-7.5px) rotate(45deg);
 }*/
+
+/*
+****************************FOOTER*******************************
+*/
+footer{
+    background-color: var(--dark);
+    padding: 20px 0;
+}
+#map{
+    width: 700px;
+    height: 400px;
+}
+
+footer h3,footer a,footer p{
+    color: var(--white);
+}
+footer h3{
+    margin-bottom: 16px;
+}
+
+
+/*
+****************************************************************
+****************************************************************
+****************************INDEX*******************************
+****************************************************************
+****************************************************************
+*/
 
 /*
 ****************************HERO*******************************
@@ -360,13 +395,131 @@ button{
 .p-error{
     color: red;
 }
+
 /*
-****************************FOOTER*******************************
+****************************************************************
+****************************************************************
+****************************DETAIL PRODUIT**********************
+****************************************************************
+****************************************************************
 */
-footer{
+
+/*
+****************************PAGINATION*******************************
+*/
+.ancreChaussure{
+    background-color: var(--dark);
+    padding: 5px 20px;
+}
+.ancreChaussure p, .ancreLibelle p{
+    color: var(--white);
+}
+.ancreLibelle{
+    background-color: var(--blue);
+    padding: 5px 20px;
+}
+
+/*
+****************************ARTICLE*******************************
+*/
+.swiper-content{
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.libelleArticle{
+    width: 40%;
+}
+.libelleContent{
+    width: 100%;
+}
+.libelleContent h4{
+    color: var(--dark);
+    font-weight: 700;
+}
+.libelleP p, .libelleArticle li{
+    color: var(--dark);
+}
+.couleurDispo{
+    width: 100%;
+}
+.bold{
+    font-weight: 700;
+}
+.rond{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.rond-bleu{
+    background-color: blue;
+}
+.rond-violet{
+    background-color: blueviolet;
+}
+.rond-rouge{
+    background-color:crimson;
+}
+.rond-vert{
+    background-color:limegreen;
+}
+select[name="taille"]{
+    width: 120px;
+    padding: 5px;
+}
+/*
+****************************AVIS*******************************
+*/
+.avis h2{
+    margin-bottom: 64px;
+}
+.imgProfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background-color: var(--dark);
 }
-#map{
-    width: 700px;
-    height: 400px;
+.imgProfil img{
+    width: 30px;
+    height: 30px;
 }
+.avisContent{
+    width: 100%;
+}
+.avisComment{
+    width: 70%;
+}
+.nomAvis{
+    width: 25%;
+    margin-bottom: 8px;
+}
+
+/*
+****************************************************************
+****************************************************************
+****************************CATEGORIEBASKETS********************
+****************************************************************
+****************************************************************
+*/
+
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M'S est une boutique fondée en 1993 spécialisée dans les vêtements , chaussures et équipements divers de sports pour hommes. Notre objectif est de vous fournir le meilleur pour la pratique de vos activités sportives en intérieur comme en extérieur. Nous travaillons avec les plus grandes marques et nous disposons de nos propres ateliers de fabrication. Parmi les nouveautés issues de notre pole recherche et développement, les produits de la gamme @utdoor pour les activités de plein air, qui allient confort, respirabilité et protection grâce a nos matériaux à la pointe de la technologie textile.">
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Détails et avis, libellé du produit </title>
+</head>
+<body>
+    <!-- 
+        ----------------------HEADER------------------------
+     -->
+     <header class="flex align-center space-between sticky">
+        <div id="burger" class="hidden flex align-center justify-center">
+            <button id="burgerIcon" class="burger_icon flex">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="logo"><a href="./index.html" title="Accueil"><img src="./imagesSIte/logo-blanc.png"
+                    alt="logo M'S"></a></div>
+        <div id="headerBurger" class="hidden">
+            <nav>
+                <ul class="flex gap32 flex-column">
+                    <li><a href="./index.html" title="Accueil">Accueil</a></li>
+                    <li><a href="./categorieBaskets.html" title="Chaussures">Chaussures</a></li>
+                    <li><a href="" title="Vêtements">Vêtements</a></li>
+                    <li><a href="" title="Accessoires">Accessoires</a></li>
+                    <li><a href="" title="@utdoor">@utdoor</a></li>
+                    <li><a href="./index.html?#contact" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="">
+            <ul class="flex gap32">
+                <li><a href="./index.html" title="Accueil">Accueil</a></li>
+                <li><a href="./categorieBaskets.html" title="Chaussures">Chaussures</a></li>
+                <li><a href="" title="Vêtements">Vêtements</a></li>
+                <li><a href="" title="Accessoires">Accessoires</a></li>
+                <li><a href="" class="door" title="@utdoor">@utdoor</a></li>
+                <li><a href="./index.html?#contact" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="flex gap16">
+            <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
+            <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
+        </div>
+    </header>
+    <!-- 
+        ----------------------MAIN------------------------
+    -->
+    <main>
+        <!-- 
+        ----------------------PAGINATION------------------------
+        -->
+        <div class="container flex gap32 align-center">
+            <div class="ancreChaussure"><p>Chaussures > </p></div>
+            <div><p>Baskets > </p></div>
+            <div class="ancreLibelle"><p>Libellé du produit</p></div>
+        </div>
+        <!-- 
+        ----------------------ARTICLE------------------------
+        -->
+        <article class="container flex space-between align-center">
+            <div class="swiper-content">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./details-produit/basket2-bleu.png" alt="Basket bleu de la gamme @utdoor M'S"></div>
+                      <div class="swiper-slide"><img src="./details-produit/basket2-violet.png" alt="Basket violette de la gamme @utdoor M'S"></div>
+                      <div class="swiper-slide"><img src="./details-produit/basket2-rouge.png" alt="Basket rouge de la gamme @utdoor M'S"></div>
+                      <div class="swiper-slide"><img src="./details-produit/basket2-vert.png" alt="Basket verte de la gamme @utdoor M'S"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="libelleArticle flex gap32">
+                <div class="libelleContent flex align-center space-between">
+                    <h4>Libellé du produit</h4>
+                    <p class="newPrix">159€</p>
+                </div>
+                <div class="outTexte libelleP">
+                    <p>Dernière née de la gamme, cette basket est conçue pour la course a pied sur bitume comme sur les chemins légèrement escarpés.
+                    </p>
+                    <ul class="outUl">
+                        <li>Semelle : caoutchouc naturel anti dérapant</li>
+                        <li>Bon maintien du pied </li>
+                        <li>Aération optimale grâce à la structure micro alvéolée de sa coque</li>
+                    </ul>
+                </div>
+                <div class="couleurDispo flex space-between">
+                    <p><span class="bold">Couleurs diponibles</span></p>
+                    <div class="flex gap16">
+                        <div class="rond rond-bleu"></div>
+                        <div class="rond rond-violet"></div>
+                        <div class="rond rond-rouge"></div>
+                        <div class="rond rond-vert"></div>
+                    </div>
+                </div>
+                <div class="couleurDispo flex space-between">
+                    <p><span class="bold">Tailles disponibles</span></p>
+                    <div>
+                        <select name="taille" id="taille">
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="couleurDispo flex space-between">
+                    <p><span class="bold">Nombre d'articles en stock</span></p>
+                    <p>67</p>
+                </div>
+            </div>
+        </article>
+        <!-- 
+        ----------------------AVIS------------------------
+        -->
+        <div class="container avis">
+            <h2>Avis des consommateurs</h2>
+            <div class="flex gap64">
+                <div class="avisContent flex gap16 align-center">
+                    <div class="imgProfil flex align-center justify-center"><img src="./imagesSIte/header-account.png" alt="image de profil du compte utilisateur du fabuleux client Nicolas notre vénéré formateur"></div>
+                    <div class="avisComment">
+                        <div class="nomAvis flex space-between"><p><span class="bold">Nicolas</span></p><p>★★★★☆</p></div>
+                        <p>Ces baskets sont super, je le prends pour courrir ou même en ville pour sortir car elles sont sumpas en plus et faciles à porter, je recommande grandement ce produit</p>
+                    </div>
+                </div>
+                <div class="avisContent flex gap16 align-center">
+                    <div class="imgProfil flex align-center justify-center"><img src="./imagesSIte/header-account.png" alt="image de profil du compte utilisateur du fabuleux client Nicolas notre vénéré formateur"></div>
+                    <div class="avisComment">
+                        <div class="nomAvis flex space-between"><p><span class="bold">Nicolas</span></p><p>★★★★☆</p></div>
+                        <p>Ces baskets sont super, je le prends pour courrir ou même en ville pour sortir car elles sont sumpas en plus et faciles à porter, je recommande grandement ce produit</p>
+                    </div>
+                </div>
+                <div class="avisContent flex gap16 align-center">
+                    <div class="imgProfil flex align-center justify-center"><img src="./imagesSIte/header-account.png" alt="image de profil du compte utilisateur du fabuleux client Nicolas notre vénéré formateur"></div>
+                    <div class="avisComment">
+                        <div class="nomAvis flex space-between"><p><span class="bold">Nicolas</span></p><p>★★★★☆</p></div>
+                        <p>Ces baskets sont super, je le prends pour courrir ou même en ville pour sortir car elles sont sumpas en plus et faciles à porter, je recommande grandement ce produit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- 
+    ----------------------FOOTER------------------------
+    -->
+    <footer class="flex flex-column justify-center align-center gap32">
+        <div class="logo"><a href="./index.html" title="Accueil"><img src="./imagesSIte/logo-blanc.png"
+                    alt="Lodo M'S"></a></div>
+        <p>Retrouvez nos boutiques près de chez vous</p>
+        <div id="map"></div>
+        <div class="flex space-between gap32">
+            <div class="plan">
+                <h3>Plan du site</h3>
+                <nav>
+                    <ul class="flex gap5 flex-column">
+                        <li><a href="" title="Accueil">Accueil</a></li>
+                        <li><a href="./categorieBaskets.html" title="Chaussures">Chaussures</a></li>
+                        <li><a href="" title="Vêtements">Vêtements</a></li>
+                        <li><a href="" title="Accessoires">Accessoires</a></li>
+                        <li><a href="" title="@utdoor">@utdoor</a></li>
+                        <li><a href="#contact" title="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h3>Horaires d'ouverture de nos boutiques</h3>
+                <p>Du lundi au vendredi : 10h - 12h30 puis 13h30 - 19h</p>
+                <p>Le samedi : 9h - 18h30 non stop</p>
+            </div>
+            <div>
+                <h3>Retrouvez nous sur les réseaux sociaux</h3>
+                <div class="flex gap16"><a href="https://twitter.com/?lang=fr" title="twitter"><img src="./imagesSIte/TwitterX.png" alt="logo twiter"></a><a href="https://www.facebook.com/?locale=fr_FR" title="facebook"><img src="./imagesSIte/Facebook.png" alt="logo facebook"></a><a href="https://www.tiktok.com/fr/" title="tiktok"><img src="./imagesSIte/TikTok.png" alt=""></a><a href="https://www.instagram.com/" title="instagram"><img src="./imagesSIte/Instagram.png" alt="logo instagram"></a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- 
+    ----------------------SCRIPT------------------------
+    -->
+    <script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
+    <script src="./node_modules/swiper/swiper-bundle.js" defer></script>
+    <script src="./header.js" defer></script>
+    <script src="./map.js" defer></script>
+    <script src="./detailProduit.js" defer></script>
+</body>
+</html>
