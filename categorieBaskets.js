@@ -31,15 +31,3 @@ function contenu (donnees){
 
     })
 }
-/*
-`<article class="flex gap32">
-        <div><img src="./imagesProduits/${donnee.photo}" alt="${donnee.description}"></div>
-        <div class="flex gap16">
-            <div class="outNew flex align-center space-between">
-                <h5>${donnee.nom}</h5>
-                <p class="newPrix">${donnee.prix}€</p>
-            </div>
-            <p>${donnee.description}</p>
-        </div>
-    </article>`
-*/

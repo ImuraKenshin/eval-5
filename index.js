@@ -4,6 +4,10 @@
 // la fonction fait apparaitre la div ref lorque un objet lier à un produit est sélectionné
 let ref = document.querySelector(".ref")
 
+/**
+ * la fonction teste la valeur du select et fait apparaitre ref en fonction de celle ci
+ * @param {declaratiion} x 
+ */
 function reference (x){
     // si la valeur du select est une valeur de produit
     if(x.value === "infoProduit" || x.value === "probProduit"){
@@ -124,6 +128,10 @@ function testObjet() {
 let refArt = document.getElementById("ref")
 refArt.addEventListener("change",testRef)
 
+/**
+ * la fonction teste la saisie de l'utilisateur dans le champ ref
+ * @returns 
+ */
 function testRef(){
     // si la div ref est visible
     if(ref.classList.contains("hidden") === false){
