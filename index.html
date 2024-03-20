@@ -22,7 +22,7 @@
         <div id="headerBurger">
             <nav>
                 <ul class="flex gap32 flex-column">
-                    <li><a href="" title="Accueil">Accueil</a></li>
+                    <li><a href="./index.html" title="Accueil">Accueil</a></li>
                     <li><a href="./categorieBaskets.html" title="Chaussures">Chaussures</a></li>
                     <li><a href="" title="Vêtements">Vêtements</a></li>
                     <li><a href="" title="Accessoires">Accessoires</a></li>
@@ -36,7 +36,7 @@
         </div>
         <nav class="mobile">
             <ul class="flex gap32">
-                <li><a href="" title="Accueil">Accueil</a></li>
+                <li><a href="./index.html" title="Accueil">Accueil</a></li>
                 <li><a href="./categorieBaskets.html" title="Chaussures">Chaussures</a></li>
                 <li><a href="" title="Vêtements">Vêtements</a></li>
                 <li><a href="" title="Accessoires">Accessoires</a></li>
@@ -61,7 +61,7 @@
     <div class="hero flex justify-center align-center">
         <!--  <div class="imgHero"><img src="./imagesSIte/banniere-running.jpg" alt="Un homme fait un footing en nature"></div>-->
         <div class="heroContent flex gap16">
-            <h1>Ne cherchez plus chaussure à votre pied</h1>
+            <p class="slogan">Ne cherchez plus chaussure à votre pied<p>
             <p>Découvrez notre toute nouvelle gamme de baskets M'S déclinée en 4 coloris</p>
             <div class="btn-bleu"><a href="./detailProduit.html" title="Découvrir">Découvrir la gamme</a></div>
         </div>
@@ -158,6 +158,16 @@
                     alt="un jogging M'S noir disponible en plusieurs tailles"></div>
         </section>
         <!-- 
+            *************************************PRESENTATION M'S*******************************
+        -->
+        <section class="container flex space-between">
+            <div class="prezImg"><img src="./imagesSIte/Firefly image de la devanture d'un magasin de sport dont l'enseigne est M'S 37862.jpg" alt="Devanture d'un magasin de sport M'S"></div>
+            <div class="prezContent flex">
+                <h1>Les boutiques M'S,<br> spécialiste vêtements , chaussures et accessoires de sport pour homme en intérieur et extérieur</h1>
+                <p>M'S est une boutique fondée en 1993 spécialisée dans les vêtements , chaussures et équipements divers de sports pour hommes. Notre objectif est de vous fournir le meilleur pour la pratique de vos activités sportives en intérieur comme en extérieur. Nous travaillons avec les plus grandes marques et nous disposons de nos propres ateliers de fabrication. Parmi les nouveautés issues de notre pole recherche et développement, les produits de la gamme @utdoor pour les activités de plein air, qui allient confort, respirabilité et protection grâce a nos matériaux à la pointe de la technologie textile.</p>
+            </div>
+        </section>
+        <!-- 
             *************************************MARQUES*******************************
         -->
         <section class="marques">
@@ -177,7 +187,7 @@
         <section class="container flex align-center space-between">
             <div class="formImg"><img src="./imagesSIte/illustration-boxe.jpg"
                     alt="Un homme fait de la boxe avec de l'équipement M'S"></div>
-            <form id="monform" class="flex gap32" action="#" method="get" novalidate>
+            <form id="monform" class="flex gap32" action="#" method="post" novalidate>
                 <div class="formContent flex gap16">
                     <h2>Contactez-nous</h2>
                     <p>Pour des informations sur nos produits, pour toute demande de renseignement ou pour nous faire
@@ -187,20 +197,20 @@
                     <div class="civilite flex gap16">
                         <div>
                             <label for="nom" class="flex flex-column gap5">Votre nom
-                                <input type="text" name="nom" id="nom">
+                                <input type="text" name="nom" id="nom" placeholder="Votre nom ici">
                             </label>
                             <p class="p-error hidden" id="error-nom"></p>
                         </div>
                         <div>
                             <label for="prenom" class="flex flex-column gap5">Votre prénom
-                                <input type="text" name="prenom" id="prenom">
+                                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom ici">
                             </label>
                             <p class="p-error hidden" id="error-prenom"></p>
                         </div>
                     </div>
                     <div>
                         <label for="mail" class="flex flex-column gap5">Votre adresse de messagerie
-                            <input type="email" name="mail" id="mail">
+                            <input type="email" name="mail" id="mail" placeholder="exemple.mail@gmail.com">
                         </label>
                         <p class="p-error hidden" id="error-mail"></p>
                     </div>
@@ -208,17 +218,24 @@
                         <label for="objet" class="flex flex-column gap5">Objet
                             <select name="objet" id="objet">
                                 <option value="">Choisissez un sujet</option>
-                                <option value="infoProduit">information sur un produit</option>
                                 <option value="renseignement">Demande de renseignement</option>
+                                <option value="infoProduit">Information sur un produit</option>
+                                <option value="probProduit">Problème sur un produit</option>
                                 <option value="tech">Problème technique sur le site</option>
                             </select>
                         </label>
                         <p class="p-error hidden" id="error-objet"></p>
                     </div>
+                    <div class="ref hidden">
+                        <label for="ref" class="flex flex-column gap5">Référence du produit
+                            <input type="text" name="ref" id="ref" placeholder="Référence ici       modèle : xxx-000000">
+                        </label>
+                        <p class="p-error hidden" id="error-ref"></p>
+                    </div>
                     <div>
                         <label id="messageLab" for="message" class="flex flex-column gap5">Votre message <span
                                 class="long"></span>
-                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ici"></textarea>
                         </label>
                         <p class="p-error hidden" id="error-message"></p>
                     </div>
@@ -240,7 +257,7 @@
                 <h3>Plan du site</h3>
                 <nav>
                     <ul class="flex gap5 flex-column">
-                        <li><a href="" title="Accueil">Accueil</a></li>
+                        <li><a href="./index.html" title="Accueil">Accueil</a></li>
                         <li><a href="./categorieBaskets.html" title="Chaussures">Chaussures</a></li>
                         <li><a href="" title="Vêtements">Vêtements</a></li>
                         <li><a href="" title="Accessoires">Accessoires</a></li>
@@ -256,7 +273,7 @@
             </div>
             <div>
                 <h3>Retrouvez nous sur les réseaux sociaux</h3>
-                <div class="flex gap16"><a href="https://twitter.com/?lang=fr" title="twitter"><img src="./imagesSIte/TwitterX.png" alt="logo twiter"></a><a href="https://www.facebook.com/?locale=fr_FR" title="facebook"><img src="./imagesSIte/Facebook.png" alt="logo facebook"></a><a href="https://www.tiktok.com/fr/" title="tiktok"><img src="./imagesSIte/TikTok.png" alt=""></a><a href="https://www.instagram.com/" title="instagram"><img src="./imagesSIte/Instagram.png" alt="logo instagram"></a></div>
+                <div class="flex gap16"><a href="https://twitter.com/?lang=fr" title="twitter" target="_blank"><img src="./imagesSIte/TwitterX.png" alt="logo twiter"></a><a href="https://www.facebook.com/?locale=fr_FR" title="facebook" target="_blank"><img src="./imagesSIte/Facebook.png" alt="logo facebook"></a><a href="https://www.tiktok.com/fr/" title="tiktok" target="_blank"><img src="./imagesSIte/TikTok.png" alt="logo tiktok"></a><a href="https://www.instagram.com/" title="instagram" target="_blank"><img src="./imagesSIte/Instagram.png" alt="logo instagram"></a></div>
             </div>
         </div>
     </footer>
@@ -266,7 +283,7 @@
     <script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
     <script src="./header.js" defer></script>
     <script src="./map.js" defer></script>
-    <script src="./app.js" defer></script>
+    <script src="./index.js" defer></script>
 </body>
 
 </html>

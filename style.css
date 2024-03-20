@@ -113,7 +113,7 @@ p{
     width: 100%;
     height: fit-content;
     border: 1px solid var(--dark);
-    background-color: none;
+    background-color: transparent;
     padding: 10px 0;
     text-align: center;
 }
@@ -260,6 +260,11 @@ footer h3{
     width: 25%;
     margin: 200px 0;
 }
+.slogan{
+    font-size: 32px !important;
+    font-family: 'Archivo black', sans-serif;
+    font-weight: 400;
+}
 .heroContent p{
     font-size: 22px;
 }
@@ -344,6 +349,17 @@ footer h3{
 }
 .offreImg{
     width: 45%;
+}
+/*
+****************************PRESENTATION M'S**********************
+*/
+.prezImg{
+    width: 45%;
+    border-radius: 30px;
+}
+.prezContent{
+    width: 50%;
+    justify-content: space-evenly;
 }
 /*
 ****************************MARQUES*******************************
@@ -536,8 +552,8 @@ select[name="taille"]{
 .listeProduit h1{
     margin-bottom: 64px;
 }
-#articleContainer article{
-    width: 30%;
+#articleContainer a{
+    width: 20%;
     padding: 10px;
     box-shadow: 11px 10px 9px 1px var(--light-grey);
     -webkit-box-shadow: 11px 10px 9px 1px var(--light-grey);
@@ -547,6 +563,7 @@ select[name="taille"]{
     color: var(--dark);
     font-family: 'Roboto',sans-serif;
     font-size: 18px;
+    width: 60%;
 }
 #articleContainer .newPrix{
     font-size: 22px;

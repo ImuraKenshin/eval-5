@@ -1,4 +1,20 @@
 /*
+***********************REFERENCE CONTACT**************************
+*/
+// la fonction fait apparaitre la div ref lorque un objet lier à un produit est sélectionné
+let ref = document.querySelector(".ref")
+
+function reference (x){
+    // si la valeur du select est une valeur de produit
+    if(x.value === "infoProduit" || x.value === "probProduit"){
+        ref.classList.remove("hidden")
+    }else{
+        ref.classList.add("hidden")
+    }
+}
+
+
+/*
 ***********************teste du formulaire**************************
 */
 
@@ -88,7 +104,9 @@ function testMail() {
 }
 
 let objet = document.getElementById("objet")
-objet.addEventListener("change",testObjet)
+objet.addEventListener("change",()=>{
+    reference(objet)
+    testObjet()})
 /**
  * la fonction teste si l'utilisateur à bien séléctionné une option
  * @returns booléen
@@ -100,6 +118,38 @@ function testObjet() {
     }else{
         removeError("objet")
         return true
+    }
+}
+
+let refArt = document.getElementById("ref")
+refArt.addEventListener("change",testRef)
+
+function testRef(){
+    // si la div ref est visible
+    if(ref.classList.contains("hidden") === false){
+        // si le champ est vide
+        if(refArt.value === "" ){
+            console.log("vide")
+            // fonction erreur
+            addError("ref","Ce champ ne peut pas être vide")
+            return false
+        }else{
+            // l'utilisateur n'utilise pas les caractères autorisés
+            let req = /^[a-zA-Z]{3}-\d{6}$/
+            if(req.test(refArt.value)===false){
+                //fonction erreur
+                addError("ref","Votre référence ne correspond pas à nos références produits")
+                return false
+            // l'utilisateur tape du code
+            }else if(hasCode(refArt.value)){
+                //fonction erreur
+                addError("ref","Ecrire du code est interdit")
+                return false
+            }
+            // fonction enleve erreur
+            removeError("ref")
+            return true
+        }
     }
 }
 
@@ -181,10 +231,11 @@ monform.addEventListener("submit",(e)=>{
     let test2 = testTexte("prenom")
     let test3 = testMail()
     let test4 = testObjet()
-    let test5 = testMessage()
+    let test5 = testRef(objet)
+    let test6 = testMessage()
 
     // (on re-apelle nos fonctions test)
-    if(test1 === false || test2 === false || test3 === false || test4 === false || test5 === false){
+    if(test1 === false || test2 === false || test3 === false || test4 === false || test5 === false || test6 === false){
         // si une d'entre elle retourne FALSE
         // on envoie pas le formulaire
     }else{
@@ -193,3 +244,9 @@ monform.addEventListener("submit",(e)=>{
         monform.submit()
     }
 })
+
+
+
+
+
+

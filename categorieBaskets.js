@@ -18,7 +18,21 @@ function contenu (donnees){
     // pour chaque élement du tableau donnees
     donnees.forEach(donnee=>{
         //je rajoute dans le contenu html de ma div mon article avec les données du json
-        div.innerHTML += `<article class="flex gap32">
+        div.innerHTML += `<a href="./detailProduit.html" title="Détail du produit"><article class="flex gap32">
+        <div><img src="./imagesProduits/${donnee.photo}" alt="${donnee.description}"></div>
+        <div class="flex gap16">
+            <div class="outNew flex align-center space-between">
+                <h5>${donnee.nom}</h5>
+                <p class="newPrix">${donnee.prix}€</p>
+            </div>
+            <p>${donnee.description}</p>
+        </div>
+    </article></a>`
+
+    })
+}
+/*
+`<article class="flex gap32">
         <div><img src="./imagesProduits/${donnee.photo}" alt="${donnee.description}"></div>
         <div class="flex gap16">
             <div class="outNew flex align-center space-between">
@@ -28,6 +42,4 @@ function contenu (donnees){
             <p>${donnee.description}</p>
         </div>
     </article>`
-
-    })
-}
+*/
