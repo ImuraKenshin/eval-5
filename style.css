@@ -34,7 +34,9 @@
 .align-center{
     align-items: center;
 }
-
+.text-center{
+    text-align: center;
+}
 .space-between{
     justify-content: space-between;
 }
@@ -114,7 +116,6 @@ p{
     border: 1px solid var(--dark);
     background-color: transparent;
     padding: 10px 0;
-    text-align: center;
 }
 .btn-blanc>a{
     color: var(--dark);
@@ -278,7 +279,6 @@ footer h3{
     width: 25%;
 }
 .articleCat h3{
-    text-align: center;
     background-color: var(--dark);
     color: var(--white);
 }
@@ -332,7 +332,6 @@ footer h3{
 }
 .btn-produit{
     width: 100%;
-    text-align: center;
 }
 .btn-produit a{
     color: var(--blue);
