@@ -235,6 +235,9 @@ footer h3,footer a,footer p{
 footer h3{
     margin-bottom: 16px;
 }
+.mentions{
+    color: var(--blue);
+}
 
 
 /*
@@ -288,7 +291,6 @@ footer h3{
     background-size: cover;
     background-position: center ;
     width: 100%;
-    background-color: red;
     padding-top: 50px;
 }
 .outContent{
@@ -884,20 +886,108 @@ select[name="taille"]{
 */
 
 @media all and (max-width:650px){
+    body{
+        margin: 2px;
+    }
     /*
-    ****************************HEADER***********************
+    *****************************FOOTER***********************
     */
-    .mobile{
-        display: none;
+    footer{
+        justify-content: center;
     }
-    header nav{
-        margin-bottom: 32px;
+    #map{
+        width: 80%
     }
-    #burger{
-        display: flex;
+
+    /*
+    ***********************************************************
+    *************************INDEX*****************************
+    ***********************************************************
+    */
+
+    /*
+    *****************************@UTDOOR***********************
+    */
+
+    .gammeOut{
+        background-image: url();
     }
-    #headerBurger{
-        display: block;
+    .bg-mobile{
+        background-image: url("./imagesSIte/accueil-bg-outdoor.jpg");
+        background-size:cover;
+        
+        background-repeat: no-repeat;
+        padding: 10% 0;
+        margin: 2px;
+    }
+    .outContent{
+        margin:10px;
+        width: 70%;
+        
+    }
+    .outArt{
+        flex-direction: column;
+        top: 0;
+    }
+    .outImg{
+        width: 100%;
+    }
+    .outDesc{
+        width: 100%;
+    }
+
+    /*
+    ****************************MARQUES***********************
+    */
+
+    .logoMarques{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logoMarques>div{
+        width: 200px;
+    }
+    .north{
+        width: 250px !important;
+    }
+
+    /*
+    ***********************************************************
+    *********************PAGE CHAUSSURES***********************
+    ***********************************************************
+    */
+
+    .listeCatChauss>a{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*
+    ***********************************************************
+    ********************CATEGORIEBASKETS***********************
+    ***********************************************************
+    */
+
+    #articleContainer a{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*
+    ***********************************************************
+    **********************DETAILPRODUITS***********************
+    ***********************************************************
+    */
+    body {
+        padding: 0 1%;
+    }
+    /*
+    ****************************MARQUES***********************
+    */
+
+    #pag{
+        flex-direction: column;
+        align-items: flex-start;
     }
 
 }
