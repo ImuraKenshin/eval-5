@@ -124,6 +124,21 @@ p{
     color: var(--blue-hover);
 }
 
+/*
+****************************CLASSE WIDTH*******************************
+*/
+.large100{
+    width: 100%;
+}
+.large50{
+    width: 50%;
+}
+.large45{
+    width: 45%;
+}
+.large40{
+    width: 40%;
+}
 
 /*
 ****************************HEADER*******************************
@@ -257,7 +272,6 @@ footer h3{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
 }
 .heroContent{
     width: 25%;
@@ -290,15 +304,12 @@ footer h3{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
-    width: 100%;
     padding-top: 50px;
 }
 .outContent{
-    width: 45%;
     margin: 100px 0;
 }
 .outArt{
-    width: 50%;
     background-color: var(--dark);
     box-shadow: 1px 0 5px var(--dark);
     position: relative;
@@ -310,9 +321,6 @@ footer h3{
 .outDesc{
     width: 65%;
     padding: 16px;
-}
-.outNew{
-    width: 100%;
 }
 .newPrix{
     color: var(--blue);
@@ -330,9 +338,6 @@ footer h3{
     list-style: circle;
     font-weight: 400;
 }
-.btn-produit{
-    width: 100%;
-}
 .btn-produit a{
     color: var(--blue);
 }
@@ -342,24 +347,13 @@ footer h3{
 .sectionOffre{
     padding: 200px 0;
 }
-.offreContent{
-    width: 40%;
-}
-.offreStrong{
-    width: 50%;
-}
-.offreImg{
-    width: 45%;
-}
 /*
 ****************************PRESENTATION M'S**********************
 */
 .prezImg{
-    width: 45%;
     border-radius: 30px;
 }
 .prezContent{
-    width: 50%;
     justify-content: space-evenly;
 }
 /*
@@ -386,21 +380,6 @@ footer h3{
 */
 #contact{
     padding-top: 130px;
-}
-.formImg{
-    width: 45%;
-}
-form{
-    width: 50%;
-}
-.formulaire{
-    width: 100%;
-}
-.formulaire>div{
-    width: 100%;
-}
-.civilite>div{
-    width: 40%;
 }
 button{
     color: var(--white);
@@ -448,39 +427,18 @@ button{
 /*
 ****************************ARTICLE*******************************
 */
-#articleLibelle h1{
-    width: 100%;
-}
+
 .swiper-content{
-    width: 50%;
     position: relative;
     height: 100%;
 }
 .swiper {
-    width: 100%;
     height: 100%;
 }
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .swiper-slide img {
     display: block;
-    width: 100%;
     height: 100%;
     object-fit: cover;
-}
-.libelleArticle{
-    width: 40%;
-}
-.libelleContent{
-    width: 100%;
 }
 .libelleContent h4{
     color: var(--dark);
@@ -488,9 +446,6 @@ button{
 }
 .libelleP p, .libelleArticle li{
     color: var(--dark);
-}
-.couleurDispo{
-    width: 100%;
 }
 .bold{
     font-weight: 700;
@@ -531,9 +486,6 @@ select[name="taille"]{
 .imgProfil img{
     width: 30px;
     height: 30px;
-}
-.avisContent{
-    width: 100%;
 }
 .avisComment{
     width: 70%;
@@ -688,6 +640,9 @@ select[name="taille"]{
 */
 
 @media all and (max-width:950px){
+    .medium100{
+        width: 100%;
+    }
     .container{
         max-width: 600px;
     }
@@ -746,12 +701,6 @@ select[name="taille"]{
     .produitsCat>div{
         gap: 32px;
     }
-    .articleCat{
-        width: 100%;
-    }
-    .articleCat>div{
-        width: 100%;
-    }
 
     /*
     *************************@UTDOOR***************************
@@ -759,9 +708,6 @@ select[name="taille"]{
 
     .outContent{
         width: 90%;
-    }
-    .outArt{
-        width: 100%;
     }
 
     /*
@@ -773,14 +719,7 @@ select[name="taille"]{
         gap: 32px;
     }
     .offreContent{
-        width: 100%;
         gap: 16px;
-    }
-    .offreStrong{
-        width: 100%;
-    }
-    .offreImg{
-        width: 100%;
     }
 
     /*
@@ -791,11 +730,7 @@ select[name="taille"]{
         flex-direction: column;
         gap: 32px;
     }
-    .prezImg{
-        width: 100%;
-    }
     .prezContent{
-        width: 100%;
         gap: 16px;
     }
 
@@ -817,12 +752,6 @@ select[name="taille"]{
     #contact{
         flex-direction: column-reverse;
         gap:32px;
-    }
-    #monform{
-        width: 100%;
-    }
-    .formImg{
-        width: 100%;
     }
 
     /*
@@ -858,12 +787,6 @@ select[name="taille"]{
     #articleLibelle{
         flex-direction: column;
     }
-    .swiper-content{
-        width: 100%;
-    }
-    .libelleArticle{
-        width: 100%;
-    }
 
     /*
     **************************AVIS*****************************
@@ -885,6 +808,9 @@ select[name="taille"]{
 */
 
 @media all and (max-width:650px){
+    .small100{
+        width: 100%;
+    }
     body{
         margin: 2px;
     }
@@ -927,12 +853,6 @@ select[name="taille"]{
     .outArt{
         flex-direction: column;
         top: 0;
-    }
-    .outImg{
-        width: 100%;
-    }
-    .outDesc{
-        width: 100%;
     }
 
     /*
