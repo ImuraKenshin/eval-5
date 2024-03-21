@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body" class="init">
     <!-- 
         *************************************HEADER*******************************
      -->
     <header class="flex align-center space-between sticky large100">
         
-        <div class="logo"><a href="./index.html" title="Accueil"><img src="./imagesSIte/logo-blanc.png"
-                    alt="logo M'S"></a></div>
+        <div class="logo"><a href="./index.html" title="Accueil"><img src="./imagesSIte/logo-blanc.png" alt="logo M'S"></a></div>
         <div id="headerBurger">
             <nav>
                 <ul class="flex gap32 flex-column">
@@ -30,6 +29,15 @@
                 </ul>
             </nav>
             <div class="flex gap16">
+                <div class="access">
+                    <p>Luciole</p>
+                    <label for="accessibilite2" class="change">
+                      <input name="accessibilite2" id="accessibilite2" class="togglesw" type="checkbox">
+                      <div class="indicator left"></div>
+                      <div class="indicator right"></div>
+                      <div class="button"></div>
+                    </label>
+                </div>
                 <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
                 <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
             </div>
@@ -44,6 +52,15 @@
             </ul>
         </nav>
         <div class="mobile flex gap16">
+            <div class="access">
+                <p>Luciole</p>
+                <label for="accessibilite" class="change">
+                  <input name="accessibilite" id="accessibilite" class="togglesw" type="checkbox">
+                  <div class="indicator left"></div>
+                  <div class="indicator right"></div>
+                  <div class="button"></div>
+                </label>
+            </div>
             <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
             <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
         </div>
@@ -286,6 +303,7 @@
     <script src="./favIcone.js" defer></script>
     <script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
     <script src="./header.js" defer></script>
+    <script src="./access.js"></script>
     <script src="./map.js" defer></script>
     <script src="./index.js" defer></script>
 </body>
