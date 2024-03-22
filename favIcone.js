@@ -1,4 +1,4 @@
-
+window.addEventListener("DOMContentLoaded",()=>{})
 
 // light recupère l'information si le thème est sombre
 

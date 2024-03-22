@@ -1,3 +1,6 @@
+window.addEventListener("DOMContentLoaded",()=>{})
+
+
 /*
 ***********************REFERENCE CONTACT**************************
 */
@@ -167,7 +170,7 @@ let long = document.querySelector(".long")
 message.addEventListener("change", testMessage)
 message.addEventListener("input",()=>{
     // compteur de caractère
-    long.innerText = message.value.length+"/250"
+    long.innerText = message.value.length+"/500"
 })
 /**
  * la fonction teste la saisie de l'utilisateur dans le champ message
@@ -183,7 +186,7 @@ function testMessage() {
         // => balise script
         addError("message","Vous ne pouvez pas injecter de code ici!")
         return false
-    }else if(message.value.length >=250){
+    }else if(message.value.length >=500){
         // on limite la longueur du message
         addError("message","Vous avez renseigné trop de caractères")
         return false

@@ -1,3 +1,7 @@
+window.addEventListener("DOMContentLoaded",()=>{})
+
+
+
 let burger = document.getElementById("burger")
 let lateral = document.getElementById("headerBurger")
 let span1 = document.getElementById("1")

@@ -1,3 +1,7 @@
+window.addEventListener("DOMContentLoaded",()=>{})
+
+
+
 /*
 ***********************Map de la librairie leaflet**************************
 */

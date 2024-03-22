@@ -1,3 +1,5 @@
+window.addEventListener("DOMContentLoaded",()=>{})
+
 
 // la section intègre le code de la librairie Swiper
 

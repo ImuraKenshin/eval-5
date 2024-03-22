@@ -1,3 +1,6 @@
+window.addEventListener("DOMContentLoaded",()=>{})
+
+
 fetch("./baskets.json")
 .then(data =>{
     return data.json()

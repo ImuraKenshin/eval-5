@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="M'S est une boutique fondée en 1993 spécialisée dans les vêtements , chaussures et équipements divers de sports pour hommes. Notre objectif est de vous fournir le meilleur pour la pratique de vos activités sportives en intérieur comme en extérieur. Nous travaillons avec les plus grandes marques et nous disposons de nos propres ateliers de fabrication. Parmi les nouveautés issues de notre pole recherche et développement, les produits de la gamme @utdoor pour les activités de plein air, qui allient confort, respirabilité et protection grâce a nos matériaux à la pointe de la technologie textile.">
+    <meta name="description" content="Découvrez en détail notre dernier modèle de basket @utdoor. Conçu avec des matériaux de haute qualité et une technologie de pointe, cette chaussure offre confort et performance pour vos activités sportives en intérieur et en extérieur. Achetez dès maintenant et soyez prêt à relever tous les défis.">
     <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css">
     <link id="favIcone" rel="shortcut icon" href="" type="image/x-icon">
@@ -29,6 +29,15 @@
                 </ul>
             </nav>
             <div class="flex gap16">
+                <div class="access">
+                    <p>Luciole</p>
+                    <label for="accessibilite2" class="change">
+                      <input name="accessibilite2" id="accessibilite2" class="togglesw" type="checkbox">
+                      <div class="indicator left"></div>
+                      <div class="indicator right"></div>
+                      <div class="button"></div>
+                    </label>
+                </div>
                 <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
                 <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
             </div>
@@ -43,6 +52,15 @@
             </ul>
         </nav>
         <div class="mobile flex gap16">
+            <div class="access">
+                <p>Luciole</p>
+                <label for="accessibilite" class="change">
+                  <input name="accessibilite" id="accessibilite" class="togglesw" type="checkbox">
+                  <div class="indicator left"></div>
+                  <div class="indicator right"></div>
+                  <div class="button"></div>
+                </label>
+            </div>
             <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
             <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
         </div>
@@ -197,6 +215,7 @@
         *********************************SCRIPT*********************************
     -->
     <script src="./favIcone.js" defer></script>
+    <script src="./access.js"></script>
     <script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
     <script src="./node_modules/swiper/swiper-bundle.js" defer></script>
     <script src="./header.js" defer></script>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="M'S est une boutique fondée en 1993 spécialisée dans les vêtements , chaussures et équipements divers de sports pour hommes. Notre objectif est de vous fournir le meilleur pour la pratique de vos activités sportives en intérieur comme en extérieur. Nous travaillons avec les plus grandes marques et nous disposons de nos propres ateliers de fabrication. Parmi les nouveautés issues de notre pole recherche et développement, les produits de la gamme @utdoor pour les activités de plein air, qui allient confort, respirabilité et protection grâce a nos matériaux à la pointe de la technologie textile.">
-    <title>Chaussures marque M'S, catégorie chaussure de ville, baskets, running, course, baskets sport en salle, @utdoor</title>
+    <meta name="description" content="Trouvez la paire parfaite pour chaque occasion avec notre sélection de chaussures de ville, baskets, running, courses, baskets sport en salle et bien plus encore. Explorez notre gamme @utdoor pour des chaussures adaptées à tous les terrains.">
+    <title>Chaussures marque M'S, catégorie chaussure de ville, baskets, running, course, baskets sport en salle, @utdoor pour homme</title>
     <link id="favIcone" rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="style.css">
@@ -28,6 +28,15 @@
                 </ul>
             </nav>
             <div class="flex gap16">
+                <div class="access">
+                    <p>Luciole</p>
+                    <label for="accessibilite2" class="change">
+                      <input name="accessibilite2" id="accessibilite2" class="togglesw" type="checkbox">
+                      <div class="indicator left"></div>
+                      <div class="indicator right"></div>
+                      <div class="button"></div>
+                    </label>
+                </div>
                 <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
                 <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
             </div>
@@ -42,6 +51,15 @@
             </ul>
         </nav>
         <div class="mobile flex gap16">
+            <div class="access">
+                <p>Luciole</p>
+                <label for="accessibilite" class="change">
+                  <input name="accessibilite" id="accessibilite" class="togglesw" type="checkbox">
+                  <div class="indicator left"></div>
+                  <div class="indicator right"></div>
+                  <div class="button"></div>
+                </label>
+            </div>
             <div><a href="" title="Panier"><img src="./imagesSIte/header-pannier.png" alt="icône panier"></a></div>
             <div><a href="" title="Account"><img src="./imagesSIte/header-account.png" alt="icône account"></a></div>
         </div>
@@ -156,6 +174,7 @@
         *************************************SCRIPT*******************************
     -->
     <script src="./favIcone.js" defer></script>
+    <script src="./access.js"></script>
     <script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
     <script src="./header.js" defer></script>
     <script src="./map.js" defer></script>

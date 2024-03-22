@@ -23,14 +23,14 @@
     --light-grey:#EBEBEB;
     --white:#FFFFFF;
     --blue-hover:#3E8BAC;
+    --roboto:"Roboto";
+    --archivo:"Archivo black";
 }
 
 /*
 ****************************ACCESSIBILITE*******************************
 */
-.luciole{
-    font-family: 'Luciole', sans-serif;
-}
+
 .access p{
     color: var(--white);
     margin-right: 16px;
@@ -182,14 +182,17 @@
 .hidden{
     display: none;
 }
-
-
+form,label{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--roboto),sans-serif;
+}
 nav,ul,li,a{
     list-style: none;
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--roboto),sans-serif;
 }
 a:hover{
     color: var(--blue-hover);
@@ -199,7 +202,7 @@ img{
     height: 100%;
 }
 h1,h2,h3{
-    font-family: 'Archivo black', sans-serif;
+    font-family: var(--archivo), sans-serif;
     font-weight: 400;
     color: var(--dark);
 }
@@ -214,14 +217,14 @@ h3{
     text-transform: uppercase;
 }
 h4{
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--roboto),sans-serif;
     text-transform: uppercase;
     font-size: 22px;
     color: var(--white);
 }
 p{
     color : var(--dark);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--roboto), sans-serif;
     font-weight: 400;
 }
 .btn-bleu{
@@ -260,6 +263,7 @@ p{
 .large40{
     width: 40%;
 }
+
 
 /*
 ****************************HEADER*******************************
@@ -401,7 +405,7 @@ footer h3{
 }
 .slogan{
     font-size: 32px !important;
-    font-family: 'Archivo black', sans-serif;
+    font-family: var(--archivo), sans-serif;
     font-weight: 400;
 }
 .heroContent p{
@@ -445,7 +449,7 @@ footer h3{
     padding: 16px;
 }
 .newPrix{
-    color: var(--blue);
+    color: var(--blue-hover);
     font-size: 28px;
     font-weight: 700;
 }
@@ -461,7 +465,7 @@ footer h3{
     font-weight: 400;
 }
 .btn-produit a{
-    color: var(--blue);
+    color: var(--blue-hover);
 }
 /*
 ****************************OFFRE*******************************
@@ -505,7 +509,7 @@ footer h3{
 }
 button{
     color: var(--white);
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--roboto),sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
@@ -640,7 +644,7 @@ select[name="taille"]{
 }
 #articleContainer h5{
     color: var(--dark);
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--roboto),sans-serif;
     font-size: 18px;
     width: 60%;
 }
