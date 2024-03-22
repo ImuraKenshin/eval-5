@@ -982,7 +982,7 @@ select[name="taille"]{
     .bg-mobile{
         background-image: url("./imagesSIte/accueil-bg-outdoor.jpg");
         background-size:cover;
-        background-position: right;
+        background-position-x: 65%;
         background-repeat: no-repeat;
         padding: 10% 0;
         margin: 2px;
