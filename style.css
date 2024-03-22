@@ -306,6 +306,7 @@ header a{
 /* icon burger*/
 #burger{
     display: none;
+    z-index: 10000000;
     border-radius: 16px;
     border: 1px solid #1a1a1a;
     background: rgba(74, 74, 74, 0.39);
@@ -776,6 +777,13 @@ select[name="taille"]{
     /*
     ****************************HEADER***********************
     */
+    header{
+        height: 50px;
+    }
+    .logo{
+        width: 48px;
+        height: 32px;
+    }
     .mobile{
         display: none;
     }
@@ -784,9 +792,20 @@ select[name="taille"]{
     }
     #burger{
         display: flex;
+        border-radius: 6px;
+        width: 32px;
+        height: 32px;
+    }
+    .burger_icon span:nth-child(2) {
+        width: 30%;
+      }
+    .burger_icon span{
+        width: 60%;
     }
     #headerBurger{
         display: block;
+        height: 100vh;
+        top: 0;
     }
 
     /*
@@ -966,7 +985,7 @@ select[name="taille"]{
     .bg-mobile{
         background-image: url("./imagesSIte/accueil-bg-outdoor.jpg");
         background-size:cover;
-        
+        background-position: right;
         background-repeat: no-repeat;
         padding: 10% 0;
         margin: 2px;
