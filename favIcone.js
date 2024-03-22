@@ -1,6 +1,4 @@
-window.addEventListener("DOMContentLoaded",()=>{
-    favIcone()
-})
+window.addEventListener("DOMContentLoaded",()=>{})
 
 // light recupère l'information si le thème est sombre
 
@@ -20,3 +18,4 @@ function favIcone(){
         link.href = "./imagesSIte/favicon-noir.png"
     }
 }
+favIcone()
