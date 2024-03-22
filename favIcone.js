@@ -20,6 +20,3 @@ function favIcone(){
         link.href = "./imagesSIte/favicon-noir.png"
     }
 }
-
-// j'appel ma fonction
-window.addEventListener("change",favIcone)
