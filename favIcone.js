@@ -1,4 +1,6 @@
-window.addEventListener("DOMContentLoaded",()=>{})
+window.addEventListener("DOMContentLoaded",()=>{
+    favIcone()
+})
 
 // light recupère l'information si le thème est sombre
 
@@ -20,4 +22,4 @@ function favIcone(){
 }
 
 // j'appel ma fonction
-favIcone()
+window.addEventListener("change",favIcone)
